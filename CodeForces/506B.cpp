@@ -29,8 +29,7 @@ int main(){
 		int u,v;
 		cin>>u>>v;
 		dir[u].pb(v);
-		adj[v].pb(u);
-		adj[u].pb(v);
+		adj[v].pb(u), adj[u].pb(v);
 	}
 	FOR(i,1,n+1)
 		if(!mark[i]){
